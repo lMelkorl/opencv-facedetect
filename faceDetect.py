@@ -14,7 +14,7 @@ while (True):
     for (x,y,gen,yuk) in result:
         cv2.rectangle(cam , (x,y) , (x+gen , y + yuk) , (0,0,255) , 2)
 
-    cv2.imshow("kare" , cam)
+    cv2.imshow("window" , cam)
 
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
